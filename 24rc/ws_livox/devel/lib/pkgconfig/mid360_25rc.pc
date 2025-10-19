@@ -1,0 +1,8 @@
+prefix=/home/ethan/ws_livox/devel
+
+Name: mid360_25rc
+Description: Description of mid360_25rc
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

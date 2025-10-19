@@ -1,0 +1,827 @@
+[0.007s] Invoking command in '/home/ethan/ws_livox/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov5) /usr/local/bin/cmake /home/ethan/ws_livox/src/livox_ros_driver2 -DROS_EDITION=ROS2 -DHUMBLE_ROS= -DCMAKE_INSTALL_PREFIX=/home/ethan/ws_livox/install/livox_ros_driver2
+[0.037s] -- The C compiler identification is GNU 9.4.0
+[0.074s] -- The CXX compiler identification is GNU 9.4.0
+[0.080s] -- Detecting C compiler ABI info
+[0.118s] -- Detecting C compiler ABI info - done
+[0.131s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.131s] -- Detecting C compile features
+[0.131s] -- Detecting C compile features - done
+[0.134s] -- Detecting CXX compiler ABI info
+[0.182s] -- Detecting CXX compiler ABI info - done
+[0.192s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.192s] -- Detecting CXX compile features
+[0.192s] -- Detecting CXX compile features - done
+[0.193s] -- livox_ros_driver2 version: 1.0.0
+[0.193s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.196s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.196s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.196s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.196s]   the cmake_policy command to set the policy and suppress this warning.
+[0.196s] 
+[0.197s] Call Stack (most recent call first):
+[0.197s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.197s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.197s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.197s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.197s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.197s]   /opt/ros/foxy/share/ament_cmake_auto/cmake/ament_cmake_auto-extras.cmake:17 (find_package)
+[0.197s]   /opt/ros/foxy/share/ament_cmake_auto/cmake/ament_cmake_autoConfig.cmake:41 (include)
+[0.197s]   CMakeLists.txt:224 (find_package)
+[0.197s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.197s] [0m
+[0.204s] -- Found PythonInterp: /home/ethan/anaconda3/envs/yolov5/bin/python3 (found suitable version "3.11.9", minimum required is "3")
+[0.204s] -- Using PYTHON_EXECUTABLE: /home/ethan/anaconda3/envs/yolov5/bin/python3
+[0.342s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.346s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.394s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")
+[0.411s] -- Found FastRTPS: /opt/ros/foxy/include
+[0.455s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.499s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.500s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.500s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.545s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.545s] -- Looking for pthread_create in pthreads
+[0.580s] -- Looking for pthread_create in pthreads - not found
+[0.580s] -- Looking for pthread_create in pthread
+[0.648s] -- Looking for pthread_create in pthread - found
+[0.649s] -- Found Threads: TRUE
+[0.936s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:152 (find_package):
+[0.936s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[0.936s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[0.936s]   cmake_policy command to set the policy and suppress this warning.
+[0.936s] 
+[0.936s]   CMake variable EIGEN_ROOT is set to:
+[0.936s] 
+[0.936s]     /usr/include/eigen3
+[0.936s] 
+[0.936s]   For compatibility, find_package is ignoring the variable, but code in a
+[0.936s]   .cmake module might still use it.
+[0.936s] Call Stack (most recent call first):
+[0.936s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:316 (find_eigen)
+[0.936s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:551 (find_external_library)
+[0.936s]   CMakeLists.txt:226 (find_package)
+[0.936s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.936s] [0m
+[0.938s] -- Checking for module 'eigen3'
+[0.946s] --   Found eigen3, version 3.3.7
+[0.963s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1")
+[0.963s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[0.993s] -- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex
+[0.994s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[0.994s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[0.994s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[0.994s]   cmake_policy command to set the policy and suppress this warning.
+[0.994s] 
+[0.994s]   CMake variable FLANN_ROOT is set to:
+[0.994s] 
+[0.994s]     /usr
+[0.994s] 
+[0.994s]   For compatibility, find_package is ignoring the variable, but code in a
+[0.994s]   .cmake module might still use it.
+[0.994s] Call Stack (most recent call first):
+[0.994s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:263 (find_package)
+[0.994s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:318 (find_flann)
+[0.994s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:551 (find_external_library)
+[0.994s]   CMakeLists.txt:226 (find_package)
+[0.995s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.995s] [0m
+[1.002s] -- Checking for module 'flann'
+[1.009s] --   Found flann, version 1.9.1
+[1.029s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+[1.054s] -- The imported target "vtkParseOGLExt" references the file
+[1.054s]    "/usr/bin/vtkParseOGLExt-7.1"
+[1.054s] but this file does not exist.  Possible reasons include:
+[1.054s] * The file was deleted, renamed, or moved to another location.
+[1.054s] * An install or uninstall procedure did not complete successfully.
+[1.054s] * The installation package was faulty and contained
+[1.054s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.054s] but not all the files it references.
+[1.054s] 
+[1.054s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[1.054s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[1.054s] but this file does not exist.  Possible reasons include:
+[1.054s] * The file was deleted, renamed, or moved to another location.
+[1.054s] * An install or uninstall procedure did not complete successfully.
+[1.054s] * The installation package was faulty and contained
+[1.054s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.054s] but not all the files it references.
+[1.054s] 
+[1.055s] -- The imported target "vtk" references the file
+[1.055s]    "/usr/bin/vtk"
+[1.055s] but this file does not exist.  Possible reasons include:
+[1.055s] * The file was deleted, renamed, or moved to another location.
+[1.055s] * An install or uninstall procedure did not complete successfully.
+[1.055s] * The installation package was faulty and contained
+[1.055s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.055s] but not all the files it references.
+[1.055s] 
+[1.055s] -- The imported target "pvtk" references the file
+[1.055s]    "/usr/bin/pvtk"
+[1.055s] but this file does not exist.  Possible reasons include:
+[1.055s] * The file was deleted, renamed, or moved to another location.
+[1.055s] * An install or uninstall procedure did not complete successfully.
+[1.055s] * The installation package was faulty and contained
+[1.055s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.055s] but not all the files it references.
+[1.055s] 
+[1.064s] -- Checking for module 'libusb-1.0'
+[1.072s] --   Found libusb-1.0, version 1.0.23
+[1.090s] -- Found USB_10: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+[1.090s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.090s]   The package name passed to `find_package_handle_standard_args` (USB_10)
+[1.090s]   does not match the name of the calling package (OpenNI).  This can lead to
+[1.090s]   problems in calling code that expects `find_package` result variables
+[1.090s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.090s] Call Stack (most recent call first):
+[1.090s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)
+[1.090s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)
+[1.090s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)
+[1.090s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)
+[1.090s]   CMakeLists.txt:226 (find_package)
+[1.090s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.090s] [0m
+[1.113s] -- Found OpenNI: /usr/lib/libOpenNI.so
+[1.113s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.116s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.116s]   The package name passed to `find_package_handle_standard_args` (USB_10)
+[1.116s]   does not match the name of the calling package (OpenNI2).  This can lead to
+[1.117s]   problems in calling code that expects `find_package` result variables
+[1.117s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.117s] Call Stack (most recent call first):
+[1.117s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI2.cmake:28 (find_package_handle_standard_args)
+[1.117s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:193 (find_package)
+[1.117s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_openni2)
+[1.117s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)
+[1.117s]   CMakeLists.txt:226 (find_package)
+[1.117s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.117s] [0m
+[1.141s] -- Found OpenNI2: /usr/lib/libOpenNI2.so
+[1.141s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[1.141s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.141s] [0m** WARNING ** io features related to png will be disabled[0m
+[1.148s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.148s]   The package name passed to `find_package_handle_standard_args` (libusb-1.0)
+[1.148s]   does not match the name of the calling package (PCL).  This can lead to
+[1.148s]   problems in calling code that expects `find_package` result variables
+[1.148s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.148s] Call Stack (most recent call first):
+[1.148s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:291 (find_package_handle_standard_args)
+[1.148s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:338 (find_libusb)
+[1.148s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)
+[1.148s]   CMakeLists.txt:226 (find_package)
+[1.148s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.148s] [0m
+[1.148s] -- Found libusb-1.0: /usr/include
+[1.148s] [0m** WARNING ** io features related to libusb-1.0 will be disabled[0m
+[1.151s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.151s]   The package name passed to `find_package_handle_standard_args` (USB_10)
+[1.151s]   does not match the name of the calling package (OpenNI).  This can lead to
+[1.151s]   problems in calling code that expects `find_package` result variables
+[1.151s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.151s] Call Stack (most recent call first):
+[1.151s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)
+[1.151s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)
+[1.151s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)
+[1.151s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)
+[1.151s]   CMakeLists.txt:226 (find_package)
+[1.151s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.151s] [0m
+[1.152s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.155s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.155s]   The package name passed to `find_package_handle_standard_args` (USB_10)
+[1.155s]   does not match the name of the calling package (OpenNI2).  This can lead to
+[1.155s]   problems in calling code that expects `find_package` result variables
+[1.155s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.155s] Call Stack (most recent call first):
+[1.155s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI2.cmake:28 (find_package_handle_standard_args)
+[1.155s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:193 (find_package)
+[1.155s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_openni2)
+[1.155s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)
+[1.155s]   CMakeLists.txt:226 (find_package)
+[1.155s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.155s] [0m
+[1.156s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[1.161s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:165 (find_package):
+[1.161s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.162s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.162s]   cmake_policy command to set the policy and suppress this warning.
+[1.162s] 
+[1.162s]   CMake variable QHULL_ROOT is set to:
+[1.162s] 
+[1.162s]     /usr
+[1.162s] 
+[1.162s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.162s]   .cmake module might still use it.
+[1.162s] Call Stack (most recent call first):
+[1.162s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:320 (find_qhull)
+[1.162s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)
+[1.162s]   CMakeLists.txt:226 (find_package)
+[1.162s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.162s] [0m
+[1.171s] -- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so
+[1.171s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+[1.174s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.174s]   The package name passed to `find_package_handle_standard_args` (USB_10)
+[1.174s]   does not match the name of the calling package (OpenNI).  This can lead to
+[1.174s]   problems in calling code that expects `find_package` result variables
+[1.174s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.174s] Call Stack (most recent call first):
+[1.174s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)
+[1.174s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)
+[1.175s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)
+[1.175s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)
+[1.175s]   CMakeLists.txt:226 (find_package)
+[1.175s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.175s] [0m
+[1.175s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.181s] -- looking for PCL_COMMON
+[1.182s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+[1.182s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.182s]   The package name passed to `find_package_handle_standard_args` (PCL_COMMON)
+[1.182s]   does not match the name of the calling package (PCL).  This can lead to
+[1.182s]   problems in calling code that expects `find_package` result variables
+[1.182s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.182s] Call Stack (most recent call first):
+[1.182s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.182s]   CMakeLists.txt:226 (find_package)
+[1.182s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.182s] [0m
+[1.182s] -- looking for PCL_KDTREE
+[1.182s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.182s]   The package name passed to `find_package_handle_standard_args` (PCL_KDTREE)
+[1.182s]   does not match the name of the calling package (PCL).  This can lead to
+[1.182s]   problems in calling code that expects `find_package` result variables
+[1.182s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.182s] Call Stack (most recent call first):
+[1.182s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.182s]   CMakeLists.txt:226 (find_package)
+[1.183s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.183s] [0m
+[1.183s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+[1.183s] -- looking for PCL_OCTREE
+[1.183s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.183s]   The package name passed to `find_package_handle_standard_args` (PCL_OCTREE)
+[1.183s]   does not match the name of the calling package (PCL).  This can lead to
+[1.183s]   problems in calling code that expects `find_package` result variables
+[1.183s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.183s] Call Stack (most recent call first):
+[1.183s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.183s]   CMakeLists.txt:226 (find_package)
+[1.183s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.183s] [0m
+[1.183s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+[1.183s] -- looking for PCL_SEARCH
+[1.184s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.184s]   The package name passed to `find_package_handle_standard_args` (PCL_SEARCH)
+[1.184s]   does not match the name of the calling package (PCL).  This can lead to
+[1.184s]   problems in calling code that expects `find_package` result variables
+[1.184s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.184s] Call Stack (most recent call first):
+[1.184s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.184s]   CMakeLists.txt:226 (find_package)
+[1.184s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.184s] [0m
+[1.184s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+[1.184s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.185s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.185s]   The package name passed to `find_package_handle_standard_args`
+[1.185s]   (PCL_SAMPLE_CONSENSUS) does not match the name of the calling package
+[1.185s]   (PCL).  This can lead to problems in calling code that expects
+[1.185s]   `find_package` result variables (e.g., `_FOUND`) to follow a certain
+[1.185s]   pattern.
+[1.185s] Call Stack (most recent call first):
+[1.185s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.185s]   CMakeLists.txt:226 (find_package)
+[1.185s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.185s] [0m
+[1.185s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+[1.185s] -- looking for PCL_FILTERS
+[1.185s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.186s]   The package name passed to `find_package_handle_standard_args`
+[1.186s]   (PCL_FILTERS) does not match the name of the calling package (PCL).  This
+[1.186s]   can lead to problems in calling code that expects `find_package` result
+[1.186s]   variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.186s] Call Stack (most recent call first):
+[1.186s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.186s]   CMakeLists.txt:226 (find_package)
+[1.186s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.186s] [0m
+[1.186s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+[1.186s] -- looking for PCL_2D
+[1.186s] -- Found PCL_2D: /usr/include/pcl-1.10
+[1.186s] -- looking for PCL_GEOMETRY
+[1.186s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.186s]   The package name passed to `find_package_handle_standard_args` (PCL_2D)
+[1.186s]   does not match the name of the calling package (PCL).  This can lead to
+[1.186s]   problems in calling code that expects `find_package` result variables
+[1.186s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.186s] Call Stack (most recent call first):
+[1.186s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)
+[1.186s]   CMakeLists.txt:226 (find_package)
+[1.186s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.187s] [0m
+[1.187s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.187s]   The package name passed to `find_package_handle_standard_args`
+[1.187s]   (PCL_GEOMETRY) does not match the name of the calling package (PCL).  This
+[1.187s]   can lead to problems in calling code that expects `find_package` result
+[1.187s]   variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.187s] Call Stack (most recent call first):
+[1.187s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)
+[1.187s]   CMakeLists.txt:226 (find_package)
+[1.187s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.187s] [0m
+[1.187s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.10
+[1.187s] -- looking for PCL_IO
+[1.187s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+[1.187s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.187s]   The package name passed to `find_package_handle_standard_args` (PCL_IO)
+[1.187s]   does not match the name of the calling package (PCL).  This can lead to
+[1.187s]   problems in calling code that expects `find_package` result variables
+[1.187s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.187s] Call Stack (most recent call first):
+[1.187s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.187s]   CMakeLists.txt:226 (find_package)
+[1.187s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.187s] [0m
+[1.187s] -- looking for PCL_FEATURES
+[1.188s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.188s]   The package name passed to `find_package_handle_standard_args`
+[1.188s]   (PCL_FEATURES) does not match the name of the calling package (PCL).  This
+[1.188s]   can lead to problems in calling code that expects `find_package` result
+[1.188s]   variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.188s] Call Stack (most recent call first):
+[1.188s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.188s]   CMakeLists.txt:226 (find_package)
+[1.188s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.188s] [0m
+[1.188s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+[1.188s] -- looking for PCL_ML
+[1.189s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.189s]   The package name passed to `find_package_handle_standard_args` (PCL_ML)
+[1.189s]   does not match the name of the calling package (PCL).  This can lead to
+[1.189s]   problems in calling code that expects `find_package` result variables
+[1.189s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.189s] Call Stack (most recent call first):
+[1.189s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.189s]   CMakeLists.txt:226 (find_package)
+[1.189s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.189s] [0m
+[1.189s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
+[1.189s] -- looking for PCL_SEGMENTATION
+[1.190s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.190s]   The package name passed to `find_package_handle_standard_args`
+[1.190s]   (PCL_SEGMENTATION) does not match the name of the calling package (PCL).
+[1.190s]   This can lead to problems in calling code that expects `find_package`
+[1.190s]   result variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.190s] Call Stack (most recent call first):
+[1.190s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.190s]   CMakeLists.txt:226 (find_package)
+[1.190s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.190s] [0m
+[1.190s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+[1.190s] -- looking for PCL_VISUALIZATION
+[1.191s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.191s]   The package name passed to `find_package_handle_standard_args`
+[1.191s]   (PCL_VISUALIZATION) does not match the name of the calling package (PCL).
+[1.191s]   This can lead to problems in calling code that expects `find_package`
+[1.191s]   result variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.191s] Call Stack (most recent call first):
+[1.191s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.191s]   CMakeLists.txt:226 (find_package)
+[1.191s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.191s] [0m
+[1.191s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
+[1.191s] -- looking for PCL_SURFACE
+[1.192s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.192s]   The package name passed to `find_package_handle_standard_args`
+[1.192s]   (PCL_SURFACE) does not match the name of the calling package (PCL).  This
+[1.192s]   can lead to problems in calling code that expects `find_package` result
+[1.192s]   variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.192s] Call Stack (most recent call first):
+[1.192s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.192s]   CMakeLists.txt:226 (find_package)
+[1.192s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.192s] [0m
+[1.192s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+[1.192s] -- looking for PCL_REGISTRATION
+[1.193s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.193s]   The package name passed to `find_package_handle_standard_args`
+[1.193s]   (PCL_REGISTRATION) does not match the name of the calling package (PCL).
+[1.193s]   This can lead to problems in calling code that expects `find_package`
+[1.193s]   result variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.193s] Call Stack (most recent call first):
+[1.193s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.193s]   CMakeLists.txt:226 (find_package)
+[1.193s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.193s] [0m
+[1.193s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
+[1.193s] -- looking for PCL_KEYPOINTS
+[1.193s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.194s]   The package name passed to `find_package_handle_standard_args`
+[1.194s]   (PCL_KEYPOINTS) does not match the name of the calling package (PCL).  This
+[1.194s]   can lead to problems in calling code that expects `find_package` result
+[1.194s]   variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.194s] Call Stack (most recent call first):
+[1.194s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.194s]   CMakeLists.txt:226 (find_package)
+[1.194s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.194s] [0m
+[1.194s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
+[1.194s] -- looking for PCL_TRACKING
+[1.194s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.194s]   The package name passed to `find_package_handle_standard_args`
+[1.194s]   (PCL_TRACKING) does not match the name of the calling package (PCL).  This
+[1.194s]   can lead to problems in calling code that expects `find_package` result
+[1.195s]   variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.195s] Call Stack (most recent call first):
+[1.195s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.195s]   CMakeLists.txt:226 (find_package)
+[1.195s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.195s] [0m
+[1.195s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
+[1.195s] -- looking for PCL_RECOGNITION
+[1.195s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.195s]   The package name passed to `find_package_handle_standard_args`
+[1.195s]   (PCL_RECOGNITION) does not match the name of the calling package (PCL).
+[1.195s]   This can lead to problems in calling code that expects `find_package`
+[1.196s]   result variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.196s] Call Stack (most recent call first):
+[1.196s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.196s]   CMakeLists.txt:226 (find_package)
+[1.196s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.196s] [0m
+[1.196s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
+[1.196s] -- looking for PCL_STEREO
+[1.196s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.196s]   The package name passed to `find_package_handle_standard_args` (PCL_STEREO)
+[1.196s]   does not match the name of the calling package (PCL).  This can lead to
+[1.196s]   problems in calling code that expects `find_package` result variables
+[1.197s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.197s] Call Stack (most recent call first):
+[1.197s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.197s]   CMakeLists.txt:226 (find_package)
+[1.197s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.197s] [0m
+[1.197s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so
+[1.197s] -- looking for PCL_APPS
+[1.197s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.197s]   The package name passed to `find_package_handle_standard_args` (PCL_APPS)
+[1.197s]   does not match the name of the calling package (PCL).  This can lead to
+[1.197s]   problems in calling code that expects `find_package` result variables
+[1.197s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.197s] Call Stack (most recent call first):
+[1.198s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.198s]   CMakeLists.txt:226 (find_package)
+[1.198s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.198s] [0m
+[1.198s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
+[1.198s] -- looking for PCL_IN_HAND_SCANNER
+[1.198s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.198s]   The package name passed to `find_package_handle_standard_args`
+[1.198s]   (PCL_IN_HAND_SCANNER) does not match the name of the calling package (PCL).
+[1.198s]   This can lead to problems in calling code that expects `find_package`
+[1.198s]   result variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.198s] Call Stack (most recent call first):
+[1.198s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)
+[1.198s]   CMakeLists.txt:226 (find_package)
+[1.198s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.198s] [0m
+[1.198s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10
+[1.198s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.198s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.199s]   The package name passed to `find_package_handle_standard_args`
+[1.199s]   (PCL_POINT_CLOUD_EDITOR) does not match the name of the calling package
+[1.199s]   (PCL).  This can lead to problems in calling code that expects
+[1.199s]   `find_package` result variables (e.g., `_FOUND`) to follow a certain
+[1.199s]   pattern.
+[1.199s] Call Stack (most recent call first):
+[1.199s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)
+[1.199s]   CMakeLists.txt:226 (find_package)
+[1.199s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.199s] [0m
+[1.199s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10
+[1.199s] -- looking for PCL_OUTOFCORE
+[1.199s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.199s]   The package name passed to `find_package_handle_standard_args`
+[1.199s]   (PCL_OUTOFCORE) does not match the name of the calling package (PCL).  This
+[1.199s]   can lead to problems in calling code that expects `find_package` result
+[1.199s]   variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.200s] Call Stack (most recent call first):
+[1.200s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.200s]   CMakeLists.txt:226 (find_package)
+[1.200s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.200s] [0m
+[1.200s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
+[1.200s] -- looking for PCL_PEOPLE
+[1.200s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.200s]   The package name passed to `find_package_handle_standard_args` (PCL_PEOPLE)
+[1.200s]   does not match the name of the calling package (PCL).  This can lead to
+[1.200s]   problems in calling code that expects `find_package` result variables
+[1.200s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.200s] Call Stack (most recent call first):
+[1.201s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.201s]   CMakeLists.txt:226 (find_package)
+[1.201s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.201s] [0m
+[1.201s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so
+[1.201s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN
+[1.204s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1")
+[1.205s] -- Checking for module 'apr-1'
+[1.206s] --   No package 'apr-1' found
+[1.207s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):
+[1.208s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.208s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.208s]   the cmake_policy command to set the policy and suppress this warning.
+[1.208s] 
+[1.208s] Call Stack (most recent call first):
+[1.208s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.208s]   CMakeLists.txt:241 (rosidl_generate_interfaces)
+[1.208s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.208s] [0m
+[1.216s] -- Found PythonInterp: /home/ethan/anaconda3/envs/yolov5/bin/python3 (found version "3.11.9")
+[1.274s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.369s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.398s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.400s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[1.400s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.400s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.400s]   the cmake_policy command to set the policy and suppress this warning.
+[1.400s] 
+[1.400s] Call Stack (most recent call first):
+[1.400s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.400s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.400s]   CMakeLists.txt:241 (rosidl_generate_interfaces)
+[1.400s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.400s] [0m
+[1.409s] -- Found PythonInterp: /home/ethan/anaconda3/envs/yolov5/bin/python3 (found suitable version "3.11.9", minimum required is "3.5")
+[1.409s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.409s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:45 (find_package):
+[1.409s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.409s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.410s]   the cmake_policy command to set the policy and suppress this warning.
+[1.410s] 
+[1.410s] Call Stack (most recent call first):
+[1.410s]   /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.410s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.410s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.410s]   CMakeLists.txt:241 (rosidl_generate_interfaces)
+[1.410s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.410s] [0m
+[1.418s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:133 (find_package):
+[1.418s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.418s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.418s]   the cmake_policy command to set the policy and suppress this warning.
+[1.418s] 
+[1.418s] Call Stack (most recent call first):
+[1.418s]   /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.418s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.419s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.419s]   CMakeLists.txt:241 (rosidl_generate_interfaces)
+[1.419s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.419s] [0m
+[1.420s] -- Found PythonLibs: /home/ethan/anaconda3/envs/yolov5/lib/libpython3.11.so (found suitable version "3.11.9", minimum required is "3.5")
+[1.420s] -- Using PYTHON_EXECUTABLE: /home/ethan/anaconda3/envs/yolov5/bin/python3
+[1.420s] -- Using PYTHON_INCLUDE_DIRS: /home/ethan/anaconda3/envs/yolov5/include/python3.11
+[1.420s] -- Using PYTHON_LIBRARIES: /home/ethan/anaconda3/envs/yolov5/lib/libpython3.11.so
+[1.429s] -- Found PythonExtra: .so
+[1.604s] -- Using numpy include directory: /home/ethan/anaconda3/envs/yolov5/lib/python3.11/site-packages/numpy/core/include
+[1.644s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.655s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.658s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.659s] -- Configured cppcheck include dirs: /home/ethan/ws_livox/src/livox_ros_driver2/3rdparty;/home/ethan/ws_livox/src/livox_ros_driver2/src
+[1.659s] -- Configured cppcheck exclude dirs and/or files: 
+[1.662s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.662s] -- Configured cpplint exclude dirs and/or files: 
+[1.663s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.663s] -- Added test 'lint_cmake' to check CMake code style
+[1.664s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.666s] -- Added test 'uncrustify' to check C / C++ code style
+[1.667s] -- Configured uncrustify additional arguments: 
+[1.667s] -- Added test 'xmllint' to check XML markup files
+[1.668s] -- Configuring done (1.7s)
+[1.712s] -- Generating done (0.0s)
+[1.714s] -- Build files have been written to: /home/ethan/ws_livox/build/livox_ros_driver2
+[1.726s] Invoked command in '/home/ethan/ws_livox/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov5) /usr/local/bin/cmake /home/ethan/ws_livox/src/livox_ros_driver2 -DROS_EDITION=ROS2 -DHUMBLE_ROS= -DCMAKE_INSTALL_PREFIX=/home/ethan/ws_livox/install/livox_ros_driver2
+[1.727s] Invoking command in '/home/ethan/ws_livox/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov5) /usr/local/bin/cmake --build /home/ethan/ws_livox/build/livox_ros_driver2 -- -j8 -l8
+[1.742s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.745s] [  5%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2_node.dir/rclcpp_components/node_main_livox_ros_driver2_node.cpp.o[0m
+[1.745s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.993s] [  5%] Built target livox_interfaces2__cpp
+[1.996s] [  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.996s] [  8%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.996s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.000s] [ 14%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_msg__functions.c.o[0m
+[2.000s] [ 14%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_point__functions.c.o[0m
+[2.048s] [ 15%] [32m[1mLinking C shared library liblivox_ros_driver2__rosidl_generator_c.so[0m
+[2.065s] [ 15%] Built target livox_interfaces2__rosidl_generator_c
+[2.069s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.069s] [ 19%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.245s] [ 21%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_point__type_support.cpp.o[0m
+[2.245s] [ 22%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_msg__type_support.cpp.o[0m
+[2.338s] [ 26%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_msg__type_support.cpp.o[0m
+[2.338s] [ 26%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_point__type_support.cpp.o[0m
+[2.374s] [ 28%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_c.so[0m
+[2.386s] [ 31%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_point__type_support.cpp.o[0m
+[2.386s] [ 31%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_msg__type_support.cpp.o[0m
+[2.406s] [ 31%] Built target livox_interfaces2__rosidl_typesupport_c
+[2.425s] [ 35%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_point__type_support.cpp.o[0m
+[2.425s] [ 35%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp.o[0m
+[2.497s] [ 36%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_point__type_support.c.o[0m
+[2.528s] [ 38%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_msg__type_support.c.o[0m
+[2.567s] [ 40%] [32m[1mLinking C shared library liblivox_ros_driver2__rosidl_typesupport_introspection_c.so[0m
+[2.588s] [ 40%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
+[2.665s] [ 42%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.671s] [ 43%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_cpp.so[0m
+[2.691s] [ 43%] Built target livox_interfaces2__rosidl_typesupport_cpp
+[2.723s] [ 45%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so[0m
+[2.725s] [ 45%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp
+[2.728s] [ 47%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.766s] [ 47%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp
+[2.948s] [ 49%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_point__type_support_c.cpp.o[0m
+[2.948s] [ 50%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_msg__type_support_c.cpp.o[0m
+[3.171s] [ 52%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so[0m
+[3.219s] [ 52%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
+[3.225s] [ 52%] Built target livox_interfaces2
+[3.232s] [ 54%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.232s] [ 56%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds.cpp.o[0m
+[3.232s] [ 57%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/livox_ros_driver2.cpp.o[0m
+[3.233s] [ 59%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lddc.cpp.o[0m
+[3.233s] [ 61%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds_lidar.cpp.o[0m
+[3.233s] [ 63%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/driver_node.cpp.o[0m
+[3.235s] [ 64%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/comm.cpp.o[0m
+[3.449s] [ 66%] [32m[1mLinking CXX executable livox_ros_driver2_node[0m
+[3.609s] [ 66%] Built target livox_ros_driver2_node
+[3.614s] [ 68%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/ldq.cpp.o[0m
+[3.731s] [ 70%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/semaphore.cpp.o[0m
+[3.731s] [ 71%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/lidar_imu_data_queue.cpp.o[0m
+[3.985s] [ 71%] Built target livox_interfaces2__py
+[3.989s] [ 73%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/cache_index.cpp.o[0m
+[4.005s] [ 75%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/pub_handler.cpp.o[0m
+[4.027s] [ 77%] [32mBuilding C object CMakeFiles/livox_interfaces2__python.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_point_s.c.o[0m
+[4.036s] [ 78%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_cfg_file.cpp.o[0m
+[4.108s] [ 80%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_livox_lidar_cfg.cpp.o[0m
+[4.180s] [ 82%] [32mBuilding C object CMakeFiles/livox_interfaces2__python.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_msg_s.c.o[0m
+[4.323s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/liblivox_interfaces2__python.so[0m
+[4.359s] [ 84%] Built target livox_interfaces2__python
+[4.370s] [ 85%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.471s] [ 87%] [32m[1mLinking CXX shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-311-x86_64-linux-gnu.so[0m
+[4.533s] [ 87%] Built target livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext
+[4.541s] [ 89%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.552s] [ 91%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/lidar_common_callback.cpp.o[0m
+[4.636s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-311-x86_64-linux-gnu.so[0m
+[4.657s] [ 92%] Built target livox_ros_driver2__rosidl_typesupport_introspection_c__pyext
+[4.664s] [ 94%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c.o[0m
+[4.744s] [ 96%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/livox_lidar_callback.cpp.o[0m
+[4.768s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-311-x86_64-linux-gnu.so[0m
+[4.794s] [ 98%] Built target livox_ros_driver2__rosidl_typesupport_c__pyext
+[9.481s] [100%] [32m[1mLinking CXX shared library liblivox_ros_driver2.so[0m
+[10.129s] [100%] Built target livox_ros_driver2
+[10.133s] Invoked command in '/home/ethan/ws_livox/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov5) /usr/local/bin/cmake --build /home/ethan/ws_livox/build/livox_ros_driver2 -- -j8 -l8
+[10.187s] Invoking command in '/home/ethan/ws_livox/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov5) /usr/local/bin/cmake --install /home/ethan/ws_livox/build/livox_ros_driver2
+[10.189s] -- Install configuration: ""
+[10.189s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/ament_index/resource_index/rosidl_interfaces/livox_ros_driver2
+[10.189s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2
+[10.189s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg
+[10.189s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/rosidl_generator_c__visibility_control.h
+[10.189s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/custom_msg.h
+[10.189s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail
+[10.189s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__functions.h
+[10.189s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__struct.h
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__struct.h
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__functions.h
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__functions.c
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__type_support.h
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__functions.c
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__type_support.h
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/custom_point.h
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.sh
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.dsv
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so
+[10.190s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so" to ""
+[10.190s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2
+[10.190s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.190s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_c.h
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h
+[10.190s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so
+[10.191s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so" to ""
+[10.191s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2
+[10.191s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg
+[10.191s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/dds_fastrtps
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_cpp.hpp
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so
+[10.191s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.191s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2
+[10.191s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.191s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__type_support.c
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_c.h
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__type_support.c
+[10.191s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so
+[10.192s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so" to ""
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so
+[10.192s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so" to ""
+[10.192s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2
+[10.192s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/custom_point.hpp
+[10.192s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__type_support.hpp
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__builder.hpp
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__type_support.hpp
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__traits.hpp
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__struct.hpp
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__builder.hpp
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__traits.hpp
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__struct.hpp
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/rosidl_generator_cpp__visibility_control.hpp
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/custom_msg.hpp
+[10.192s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2
+[10.192s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg
+[10.192s] -- Up-to-date: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail
+[10.192s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp
+[10.193s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp
+[10.193s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__type_support.cpp
+[10.193s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_cpp.hpp
+[10.193s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so
+[10.193s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so" to ""
+[10.193s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so
+[10.193s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so" to ""
+[10.193s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.sh
+[10.193s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.dsv
+[10.193s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/__init__.py
+[10.212s] Compiling '/home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/__init__.py'...
+[10.215s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/msg
+[10.215s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/msg/_custom_msg.py
+[10.215s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/msg/__init__.py
+[10.215s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/msg/_custom_msg_s.c
+[10.215s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/msg/_custom_point.py
+[10.215s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/msg/_custom_point_s.c
+[10.215s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-311-x86_64-linux-gnu.so
+[10.215s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-311-x86_64-linux-gnu.so" to ""
+[10.215s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-311-x86_64-linux-gnu.so
+[10.215s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-311-x86_64-linux-gnu.so" to ""
+[10.216s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-311-x86_64-linux-gnu.so
+[10.216s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/python3.11/site-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-311-x86_64-linux-gnu.so" to ""
+[10.216s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_interfaces2__python.so
+[10.216s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_interfaces2__python.so" to ""
+[10.216s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.idl
+[10.216s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.idl
+[10.216s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.msg
+[10.216s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.msg
+[10.216s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node
+[10.216s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node" to ""
+[10.216s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2.so
+[10.218s] -- Set non-toolchain portion of runtime path of "/home/ethan/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2.so" to ""
+[10.218s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config
+[10.218s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS1.rviz
+[10.219s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config/HAP_config.json
+[10.219s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config/mixed_HAP_MID360_config.json
+[10.219s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS2.rviz
+[10.219s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config/MID360_config.json
+[10.219s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2
+[10.219s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_mixed.py
+[10.219s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_HAP_launch.py
+[10.219s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_MID360_launch.py
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_MID360_launch.py
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_HAP_launch.py
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/ament_index/resource_index/package_run_dependencies/livox_ros_driver2
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/ament_index/resource_index/parent_prefix_path/livox_ros_driver2
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.sh
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.dsv
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.sh
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.dsv
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.bash
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.sh
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.zsh
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.dsv
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/ament_index/resource_index/packages/livox_ros_driver2
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_generator_cExport.cmake
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_generator_cExport-noconfig.cmake
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport.cmake
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.220s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport-noconfig.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_generator_cppExport.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport-noconfig.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/ament_index/resource_index/rclcpp_components/livox_ros_driver2
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake-extras.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_libraries-extras.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_targets-extras.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config-version.cmake
+[10.221s] -- Installing: /home/ethan/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/package.xml
+[10.223s] Invoked command in '/home/ethan/ws_livox/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov5) /usr/local/bin/cmake --install /home/ethan/ws_livox/build/livox_ros_driver2

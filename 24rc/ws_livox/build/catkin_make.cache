@@ -1,0 +1,2 @@
+FAST_LIO:imu_pkg:livox_ros_driver2:mid360:mid360_25rc:topic_learn
+-DCATKIN_DEVEL_PREFIX=/home/ethan/ws_livox/devel -DCMAKE_INSTALL_PREFIX=/home/ethan/ws_livox/install -G Unix Makefiles

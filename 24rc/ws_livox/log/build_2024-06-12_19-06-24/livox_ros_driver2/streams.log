@@ -1,0 +1,51 @@
+[0.006s] Invoking command in '/home/ethan/ws_livox/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov5) /usr/local/bin/cmake /home/ethan/ws_livox/src/livox_ros_driver2 -DROS_EDITION=ROS2 -DHUMBLE_ROS= -DCMAKE_INSTALL_PREFIX=/home/ethan/ws_livox/install/livox_ros_driver2
+[0.262s] -- The C compiler identification is GNU 9.4.0
+[0.442s] -- The CXX compiler identification is GNU 9.4.0
+[0.456s] -- Detecting C compiler ABI info
+[0.527s] -- Detecting C compiler ABI info - done
+[0.544s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.544s] -- Detecting C compile features
+[0.545s] -- Detecting C compile features - done
+[0.548s] -- Detecting CXX compiler ABI info
+[0.604s] -- Detecting CXX compiler ABI info - done
+[0.615s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.615s] -- Detecting CXX compile features
+[0.616s] -- Detecting CXX compile features - done
+[0.618s] -- livox_ros_driver2 version: 1.0.0
+[0.619s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.627s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.627s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.627s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.627s]   the cmake_policy command to set the policy and suppress this warning.
+[0.627s] 
+[0.627s] Call Stack (most recent call first):
+[0.627s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.627s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.627s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.627s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.627s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.627s]   /opt/ros/foxy/share/ament_cmake_auto/cmake/ament_cmake_auto-extras.cmake:17 (find_package)
+[0.627s]   /opt/ros/foxy/share/ament_cmake_auto/cmake/ament_cmake_autoConfig.cmake:41 (include)
+[0.627s]   CMakeLists.txt:224 (find_package)
+[0.627s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.627s] [0m
+[0.671s] -- Found PythonInterp: /home/ethan/anaconda3/envs/yolov5/bin/python3 (found suitable version "3.11.9", minimum required is "3")
+[0.672s] -- Using PYTHON_EXECUTABLE: /home/ethan/anaconda3/envs/yolov5/bin/python3
+[1.010s] Traceback (most recent call last):
+[1.010s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 21, in <module>
+[1.010s]     from catkin_pkg.package import parse_package_string
+[1.010s] ModuleNotFoundError: No module named 'catkin_pkg'
+[1.012s] [31mCMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[1.012s]   execute_process(/home/ethan/anaconda3/envs/yolov5/bin/python3
+[1.012s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.012s]   /home/ethan/ws_livox/src/livox_ros_driver2/package.xml
+[1.012s]   /home/ethan/ws_livox/build/livox_ros_driver2/ament_cmake_core/package.cmake)
+[1.012s]   returned error code 1
+[1.012s] Call Stack (most recent call first):
+[1.012s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.012s]   /opt/ros/foxy/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:42 (ament_package_xml)
+[1.012s]   CMakeLists.txt:225 (ament_auto_find_build_dependencies)
+[1.012s] 
+[1.012s] [0m
+[1.012s] -- Configuring incomplete, errors occurred!
+[1.015s] Invoked command in '/home/ethan/ws_livox/build/livox_ros_driver2' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov5) /usr/local/bin/cmake /home/ethan/ws_livox/src/livox_ros_driver2 -DROS_EDITION=ROS2 -DHUMBLE_ROS= -DCMAKE_INSTALL_PREFIX=/home/ethan/ws_livox/install/livox_ros_driver2

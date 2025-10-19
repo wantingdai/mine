@@ -1,0 +1,51 @@
+header:
+  seq: 554
+  stamp:
+    secs: 1718472759
+    nsecs: 369700670
+  frame_id: "livox_frame"
+height: 1
+width: 6528
+fields:
+  -
+    name: "x"
+    offset: 0
+    datatype: 7
+    count: 1
+  -
+    name: "y"
+    offset: 4
+    datatype: 7
+    count: 1
+  -
+    name: "z"
+    offset: 8
+    datatype: 7
+    count: 1
+  -
+    name: "intensity"
+    offset: 12
+    datatype: 7
+    count: 1
+  -
+    name: "tag"
+    offset: 16
+    datatype: 2
+    count: 1
+  -
+    name: "line"
+    offset: 17
+    datatype: 2
+    count: 1
+  -
+    name: "timestamp"
+    offset: 18
+    datatype: 8
+    count: 1
+is_bigendian: False
+point_step: 26
+row_step: 169728
+data: [135, 22, 121, 63, 168, 198, 147, 192, 125, 63, 77, 64, 0, 0, 176, 65, 0, 0, 149,
+......
+, 170, 222, 61, 217, 183, 67]
+is_dense: True

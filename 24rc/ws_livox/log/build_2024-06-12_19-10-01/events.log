@@ -1,0 +1,616 @@
+[0.000000] (-) TimerEvent: {}
+[0.000131] (livox_ros_driver2) JobQueued: {'identifier': 'livox_ros_driver2', 'dependencies': OrderedDict()}
+[0.000153] (livox_ros_driver2) JobStarted: {'identifier': 'livox_ros_driver2'}
+[0.005017] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'cmake'}
+[0.005140] (livox_ros_driver2) Command: {'cmd': ['/usr/local/bin/cmake', '/home/ethan/ws_livox/src/livox_ros_driver2', '-DROS_EDITION=ROS2', '-DHUMBLE_ROS=', '-DCMAKE_INSTALL_PREFIX=/home/ethan/ws_livox/install/livox_ros_driver2'], 'cwd': '/home/ethan/ws_livox/build/livox_ros_driver2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(yolov5)'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ethan'), ('SSH_CLIENT', '192.168.43.138 8517 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ethan'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ethan/ws_livox/src/livox_ros_driver2'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ethan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', 'ROS2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '2'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:~/ethan/anaconda3/bin:/home/ethan/anaconda3/envs/yolov5/bin:/home/ethan/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/ethan/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'yolov5'), ('PWD', '/home/ethan/ws_livox/build/livox_ros_driver2'), ('CONDA_EXE', '/home/ethan/anaconda3/bin/conda'), ('SSH_CONNECTION', '192.168.43.138 8517 192.168.43.42 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('CONDA_PREFIX', '/home/ethan/anaconda3/envs/yolov5'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.036383] (livox_ros_driver2) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.074737] (livox_ros_driver2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.080938] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099519] (-) TimerEvent: {}
+[0.121987] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.131936] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.132126] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.132357] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.134759] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.179703] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.189320] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.189514] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.189794] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.190476] (livox_ros_driver2) StdoutLine: {'line': b'-- livox_ros_driver2 version: 1.0.0\n'}
+[0.191242] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[0.193921] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.194006] (livox_ros_driver2) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.194050] (livox_ros_driver2) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.194087] (livox_ros_driver2) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.194122] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.194159] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.194193] (livox_ros_driver2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.194227] (livox_ros_driver2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.194264] (livox_ros_driver2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.194299] (livox_ros_driver2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.194335] (livox_ros_driver2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.194370] (livox_ros_driver2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_auto/cmake/ament_cmake_auto-extras.cmake:17 (find_package)\n'}
+[0.194404] (livox_ros_driver2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_auto/cmake/ament_cmake_autoConfig.cmake:41 (include)\n'}
+[0.194437] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:224 (find_package)\n'}
+[0.194472] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.194507] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[0.199601] (-) TimerEvent: {}
+[0.201993] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonInterp: /home/ethan/anaconda3/envs/yolov5/bin/python3 (found suitable version "3.11.9", minimum required is "3")\n'}
+[0.202078] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /home/ethan/anaconda3/envs/yolov5/bin/python3\n'}
+[0.299732] (-) TimerEvent: {}
+[0.342400] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.345750] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.392785] (livox_ros_driver2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")\n'}
+[0.399899] (-) TimerEvent: {}
+[0.410562] (livox_ros_driver2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include\n'}
+[0.454730] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500075] (-) TimerEvent: {}
+[0.500508] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.501218] (livox_ros_driver2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.501716] (livox_ros_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.542271] (livox_ros_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.542419] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.581735] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.581962] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.600269] (-) TimerEvent: {}
+[0.642311] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.643087] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[0.700407] (-) TimerEvent: {}
+[0.800650] (-) TimerEvent: {}
+[0.900874] (-) TimerEvent: {}
+[0.931309] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:152 (find_package):\n'}
+[0.931406] (livox_ros_driver2) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[0.931449] (livox_ros_driver2) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[0.931485] (livox_ros_driver2) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[0.931520] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.931555] (livox_ros_driver2) StderrLine: {'line': b'  CMake variable EIGEN_ROOT is set to:\n'}
+[0.931588] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.931622] (livox_ros_driver2) StderrLine: {'line': b'    /usr/include/eigen3\n'}
+[0.931656] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.931690] (livox_ros_driver2) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[0.931724] (livox_ros_driver2) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[0.931764] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.931799] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:316 (find_eigen)\n'}
+[0.931835] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:551 (find_external_library)\n'}
+[0.931870] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[0.931905] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.931939] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[0.933807] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.940707] (livox_ros_driver2) StdoutLine: {'line': b'--   Found eigen3, version 3.3.7\n'}
+[0.956758] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1")\n'}
+[0.956872] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[0.986101] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex\n'}
+[0.986985] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):\n'}
+[0.987118] (livox_ros_driver2) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[0.987186] (livox_ros_driver2) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[0.987237] (livox_ros_driver2) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[0.987285] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.987333] (livox_ros_driver2) StderrLine: {'line': b'  CMake variable FLANN_ROOT is set to:\n'}
+[0.987381] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.987428] (livox_ros_driver2) StderrLine: {'line': b'    /usr\n'}
+[0.987474] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[0.987521] (livox_ros_driver2) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[0.987568] (livox_ros_driver2) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[0.987617] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.987663] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:263 (find_package)\n'}
+[0.987712] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:318 (find_flann)\n'}
+[0.987760] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:551 (find_external_library)\n'}
+[0.987808] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[0.987856] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.987904] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[0.996115] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.000953] (-) TimerEvent: {}
+[1.003908] (livox_ros_driver2) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.022645] (livox_ros_driver2) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so\n'}
+[1.046941] (livox_ros_driver2) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[1.047078] (livox_ros_driver2) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[1.047141] (livox_ros_driver2) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.047199] (livox_ros_driver2) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.047257] (livox_ros_driver2) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.047321] (livox_ros_driver2) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.047381] (livox_ros_driver2) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.047439] (livox_ros_driver2) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.047496] (livox_ros_driver2) StdoutLine: {'line': b'\n'}
+[1.047640] (livox_ros_driver2) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[1.047698] (livox_ros_driver2) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[1.047757] (livox_ros_driver2) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.047814] (livox_ros_driver2) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.047871] (livox_ros_driver2) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.047927] (livox_ros_driver2) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.047984] (livox_ros_driver2) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.048041] (livox_ros_driver2) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.048099] (livox_ros_driver2) StdoutLine: {'line': b'\n'}
+[1.048156] (livox_ros_driver2) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[1.048213] (livox_ros_driver2) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[1.048279] (livox_ros_driver2) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.048336] (livox_ros_driver2) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.048392] (livox_ros_driver2) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.048448] (livox_ros_driver2) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.048503] (livox_ros_driver2) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.048559] (livox_ros_driver2) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.048614] (livox_ros_driver2) StdoutLine: {'line': b'\n'}
+[1.048669] (livox_ros_driver2) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[1.048725] (livox_ros_driver2) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[1.048780] (livox_ros_driver2) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.048836] (livox_ros_driver2) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.048892] (livox_ros_driver2) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.048947] (livox_ros_driver2) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.049002] (livox_ros_driver2) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.049056] (livox_ros_driver2) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.049111] (livox_ros_driver2) StdoutLine: {'line': b'\n'}
+[1.057791] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.065088] (livox_ros_driver2) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.23\n'}
+[1.082422] (livox_ros_driver2) StdoutLine: {'line': b'-- Found USB_10: /usr/lib/x86_64-linux-gnu/libusb-1.0.so\n'}
+[1.082590] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.082676] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.082760] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI).  This can lead to\n'}
+[1.082821] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.082877] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.082933] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.082990] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)\n'}
+[1.083047] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)\n'}
+[1.083102] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)\n'}
+[1.083159] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.083214] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.083270] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.083326] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.101031] (-) TimerEvent: {}
+[1.106973] (livox_ros_driver2) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so\n'}
+[1.107103] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.110248] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.110375] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.110452] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI2).  This can lead to\n'}
+[1.110518] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.110582] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.110647] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.110728] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI2.cmake:28 (find_package_handle_standard_args)\n'}
+[1.110802] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:193 (find_package)\n'}
+[1.110861] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_openni2)\n'}
+[1.110916] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.110969] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.111015] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.111064] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.136451] (livox_ros_driver2) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/libOpenNI2.so\n'}
+[1.136607] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[1.136677] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.136829] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[1.143824] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.143950] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (libusb-1.0)\n'}
+[1.144016] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.144073] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.144150] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.144201] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.144251] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:291 (find_package_handle_standard_args)\n'}
+[1.144302] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:338 (find_libusb)\n'}
+[1.144350] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.144401] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.144450] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.144498] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.144546] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to libusb-1.0 will be disabled\x1b[0m\n'}
+[1.144594] (livox_ros_driver2) StdoutLine: {'line': b'-- Found libusb-1.0: /usr/include\n'}
+[1.147422] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.147526] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.147582] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI).  This can lead to\n'}
+[1.147633] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.147689] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.147738] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.147785] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)\n'}
+[1.147836] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)\n'}
+[1.147885] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)\n'}
+[1.147939] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.147990] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.148039] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.148092] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.148438] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.151641] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.151742] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.151805] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI2).  This can lead to\n'}
+[1.151857] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.151907] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.151956] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.152004] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI2.cmake:28 (find_package_handle_standard_args)\n'}
+[1.152053] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:193 (find_package)\n'}
+[1.152101] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_openni2)\n'}
+[1.152149] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.152200] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.152251] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.152301] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.152706] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[1.158674] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:165 (find_package):\n'}
+[1.158787] (livox_ros_driver2) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[1.158844] (livox_ros_driver2) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[1.158892] (livox_ros_driver2) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[1.158939] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.158983] (livox_ros_driver2) StderrLine: {'line': b'  CMake variable QHULL_ROOT is set to:\n'}
+[1.159026] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.159070] (livox_ros_driver2) StderrLine: {'line': b'    /usr\n'}
+[1.159114] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.159164] (livox_ros_driver2) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[1.159213] (livox_ros_driver2) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[1.159265] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.159310] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:320 (find_qhull)\n'}
+[1.159356] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.159400] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.159442] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.159488] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.168568] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so\n'}
+[1.168665] (livox_ros_driver2) StdoutLine: {'line': b'-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)\n'}
+[1.171896] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.171987] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.172038] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI).  This can lead to\n'}
+[1.172088] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.172132] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.172174] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.172216] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)\n'}
+[1.172258] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)\n'}
+[1.172300] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)\n'}
+[1.172341] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.172383] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.172424] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.172462] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.172633] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.178552] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.179146] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.179250] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_COMMON)\n'}
+[1.179289] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.179321] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.179353] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.179388] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.179425] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.179462] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.179492] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.179522] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.179554] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so\n'}
+[1.179587] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.179997] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so\n'}
+[1.180069] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.180112] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_KDTREE)\n'}
+[1.180173] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.180209] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.180244] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.180280] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.180314] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.180349] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.180385] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.180420] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.180455] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.180661] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.180700] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_OCTREE)\n'}
+[1.180738] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.180776] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.180813] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.180850] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.180887] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.180923] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.180960] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.180995] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.181046] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so\n'}
+[1.181098] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.181497] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.181537] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_SEARCH)\n'}
+[1.181575] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.181613] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.181648] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.181685] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.181723] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.181760] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.181810] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.181844] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.181878] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so\n'}
+[1.181916] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[1.182339] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.182379] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.182415] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_SAMPLE_CONSENSUS) does not match the name of the calling package\n'}
+[1.182452] (livox_ros_driver2) StderrLine: {'line': b'  (PCL).  This can lead to problems in calling code that expects\n'}
+[1.182490] (livox_ros_driver2) StderrLine: {'line': b'  `find_package` result variables (e.g., `_FOUND`) to follow a certain\n'}
+[1.182526] (livox_ros_driver2) StderrLine: {'line': b'  pattern.\n'}
+[1.182563] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.182599] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.182635] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.182672] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.182728] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.182764] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so\n'}
+[1.182800] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[1.183279] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so\n'}
+[1.183353] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.183399] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.183440] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_FILTERS) does not match the name of the calling package (PCL).  This\n'}
+[1.183514] (livox_ros_driver2) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.183577] (livox_ros_driver2) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.183614] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.183649] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.183687] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.183724] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.183762] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.183799] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[1.183836] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.183873] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_2D)\n'}
+[1.183910] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.183946] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.183984] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.184021] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.184090] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)\n'}
+[1.184129] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.184166] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.184203] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.184239] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.10\n'}
+[1.184277] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.184315] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.184353] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_GEOMETRY) does not match the name of the calling package (PCL).  This\n'}
+[1.184390] (livox_ros_driver2) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.184429] (livox_ros_driver2) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.184466] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.184503] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)\n'}
+[1.184541] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.184578] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.184615] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.184706] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[1.184745] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.184781] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_IO)\n'}
+[1.184817] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.184861] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.184896] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.184931] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.184965] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.185000] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.185035] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.185070] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.185104] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.10\n'}
+[1.185140] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.185177] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so\n'}
+[1.185211] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[1.185594] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.185636] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.185673] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_FEATURES) does not match the name of the calling package (PCL).  This\n'}
+[1.185711] (livox_ros_driver2) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.185746] (livox_ros_driver2) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.185795] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.185832] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.185879] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.185914] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.185948] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.185982] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so\n'}
+[1.186016] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[1.186476] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.186515] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_ML)\n'}
+[1.186554] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.186591] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.186642] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.186678] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.186718] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.186754] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.186789] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.186824] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.186858] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so\n'}
+[1.186895] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[1.187380] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.187421] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.187459] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_SEGMENTATION) does not match the name of the calling package (PCL).\n'}
+[1.187496] (livox_ros_driver2) StderrLine: {'line': b'  This can lead to problems in calling code that expects `find_package`\n'}
+[1.187533] (livox_ros_driver2) StderrLine: {'line': b'  result variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.187571] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.187607] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.187644] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.187680] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.187737] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.187772] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so\n'}
+[1.187808] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[1.188377] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.188417] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.188453] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_VISUALIZATION) does not match the name of the calling package (PCL).\n'}
+[1.188491] (livox_ros_driver2) StderrLine: {'line': b'  This can lead to problems in calling code that expects `find_package`\n'}
+[1.188541] (livox_ros_driver2) StderrLine: {'line': b'  result variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.188585] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.188621] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.188655] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.188689] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.188724] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.188757] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so\n'}
+[1.188793] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[1.189367] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.189404] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.189439] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_SURFACE) does not match the name of the calling package (PCL).  This\n'}
+[1.189475] (livox_ros_driver2) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.189514] (livox_ros_driver2) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.189551] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.189588] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.189625] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.189662] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.189699] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.189735] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so\n'}
+[1.189784] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[1.190231] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.190282] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.190317] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_REGISTRATION) does not match the name of the calling package (PCL).\n'}
+[1.190352] (livox_ros_driver2) StderrLine: {'line': b'  This can lead to problems in calling code that expects `find_package`\n'}
+[1.190387] (livox_ros_driver2) StderrLine: {'line': b'  result variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.190422] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.190458] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.190494] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.190531] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.190568] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.190604] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so\n'}
+[1.190655] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[1.191209] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.191252] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.191301] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_KEYPOINTS) does not match the name of the calling package (PCL).  This\n'}
+[1.191338] (livox_ros_driver2) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.191373] (livox_ros_driver2) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.191406] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.191441] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.191477] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.191514] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.191550] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.191586] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so\n'}
+[1.191633] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[1.192170] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.192221] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.192259] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_TRACKING) does not match the name of the calling package (PCL).  This\n'}
+[1.192296] (livox_ros_driver2) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.192333] (livox_ros_driver2) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.192369] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.192406] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.192441] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.192478] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.192515] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.192565] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so\n'}
+[1.192617] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[1.193112] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.193171] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.193208] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_RECOGNITION) does not match the name of the calling package (PCL).\n'}
+[1.193243] (livox_ros_driver2) StderrLine: {'line': b'  This can lead to problems in calling code that expects `find_package`\n'}
+[1.193277] (livox_ros_driver2) StderrLine: {'line': b'  result variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.193312] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.193346] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.193382] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.193419] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.193455] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.193491] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so\n'}
+[1.193541] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[1.194127] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.194171] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_STEREO)\n'}
+[1.194208] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.194246] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.194297] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.194332] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.194366] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.194401] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.194435] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.194471] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.194505] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so\n'}
+[1.194541] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[1.195011] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.195050] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_APPS)\n'}
+[1.195087] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.195125] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.195162] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.195199] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.195235] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.195271] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.195307] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.195343] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.195397] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so\n'}
+[1.195493] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[1.195700] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.195740] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.195801] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_IN_HAND_SCANNER) does not match the name of the calling package (PCL).\n'}
+[1.195836] (livox_ros_driver2) StderrLine: {'line': b'  This can lead to problems in calling code that expects `find_package`\n'}
+[1.195872] (livox_ros_driver2) StderrLine: {'line': b'  result variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.195908] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.195945] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)\n'}
+[1.195981] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.196018] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.196054] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.196091] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10\n'}
+[1.196163] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[1.196202] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.196239] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.196276] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_POINT_CLOUD_EDITOR) does not match the name of the calling package\n'}
+[1.196311] (livox_ros_driver2) StderrLine: {'line': b'  (PCL).  This can lead to problems in calling code that expects\n'}
+[1.196348] (livox_ros_driver2) StderrLine: {'line': b'  `find_package` result variables (e.g., `_FOUND`) to follow a certain\n'}
+[1.196384] (livox_ros_driver2) StderrLine: {'line': b'  pattern.\n'}
+[1.196421] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.196458] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:619 (find_package_handle_standard_args)\n'}
+[1.196494] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.196531] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.196568] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.196617] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10\n'}
+[1.196670] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[1.197051] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.197091] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.197128] (livox_ros_driver2) StderrLine: {'line': b'  (PCL_OUTOFCORE) does not match the name of the calling package (PCL).  This\n'}
+[1.197166] (livox_ros_driver2) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.197203] (livox_ros_driver2) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.197240] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.197276] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.197313] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.197350] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.197386] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.197436] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so\n'}
+[1.197488] (livox_ros_driver2) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[1.198020] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.198060] (livox_ros_driver2) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_PEOPLE)\n'}
+[1.198098] (livox_ros_driver2) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.198136] (livox_ros_driver2) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.198173] (livox_ros_driver2) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.198209] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.198246] (livox_ros_driver2) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.198283] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:226 (find_package)\n'}
+[1.198320] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.198365] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.198400] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so\n'}
+[1.198767] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN\n'}
+[1.201118] (-) TimerEvent: {}
+[1.201582] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1")\n'}
+[1.202174] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'apr-1'\n"}
+[1.203852] (livox_ros_driver2) StdoutLine: {'line': b"--   No package 'apr-1' found\n"}
+[1.205176] (livox_ros_driver2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):\n'}
+[1.205254] (livox_ros_driver2) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[1.205296] (livox_ros_driver2) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[1.205333] (livox_ros_driver2) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[1.205369] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.205403] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.205438] (livox_ros_driver2) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[1.205476] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:241 (rosidl_generate_interfaces)\n'}
+[1.205510] (livox_ros_driver2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.205546] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.213525] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonInterp: /home/ethan/anaconda3/envs/yolov5/bin/python3 (found version "3.11.9")\n'}
+[1.241997] (livox_ros_driver2) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):\n'}
+[1.242150] (livox_ros_driver2) StderrLine: {'line': b'  execute_process(/home/ethan/anaconda3/envs/yolov5/bin/python3 -m\n'}
+[1.242200] (livox_ros_driver2) StderrLine: {'line': b'  rosidl_adapter --package-name livox_ros_driver2 --arguments-file\n'}
+[1.242272] (livox_ros_driver2) StderrLine: {'line': b'  /home/ethan/ws_livox/build/livox_ros_driver2/rosidl_adapter__arguments__livox_interfaces2.json\n'}
+[1.242313] (livox_ros_driver2) StderrLine: {'line': b'  --output-dir\n'}
+[1.242351] (livox_ros_driver2) StderrLine: {'line': b'  /home/ethan/ws_livox/build/livox_ros_driver2/rosidl_adapter/livox_ros_driver2\n'}
+[1.242394] (livox_ros_driver2) StderrLine: {'line': b'  --output-file\n'}
+[1.242432] (livox_ros_driver2) StderrLine: {'line': b'  /home/ethan/ws_livox/build/livox_ros_driver2/rosidl_adapter/livox_interfaces2.idls)\n'}
+[1.242469] (livox_ros_driver2) StderrLine: {'line': b'  returned error code 1:\n'}
+[1.242507] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.242545] (livox_ros_driver2) StderrLine: {'line': b"  AttributeError processing template 'msg.idl.em'\n"}
+[1.242581] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.242617] (livox_ros_driver2) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[1.242654] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.242697] (livox_ros_driver2) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/resource/__init__.py", line 51, in evaluate_template\n'}
+[1.242736] (livox_ros_driver2) StderrLine: {'line': b'      em.BUFFERED_OPT: True,\n'}
+[1.242772] (livox_ros_driver2) StderrLine: {'line': b'      ^^^^^^^^^^^^^^^\n'}
+[1.242808] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.242844] (livox_ros_driver2) StderrLine: {'line': b"  AttributeError: module 'em' has no attribute 'BUFFERED_OPT'\n"}
+[1.242881] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.242917] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.242952] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.242988] (livox_ros_driver2) StderrLine: {'line': b'  During handling of the above exception, another exception occurred:\n'}
+[1.243023] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.243058] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.243094] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.243130] (livox_ros_driver2) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[1.243166] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.243202] (livox_ros_driver2) StderrLine: {'line': b'    File "<frozen runpy>", line 198, in _run_module_as_main\n'}
+[1.243239] (livox_ros_driver2) StderrLine: {'line': b'    File "<frozen runpy>", line 88, in _run_code\n'}
+[1.243275] (livox_ros_driver2) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[1.243312] (livox_ros_driver2) StderrLine: {'line': b'      sys.exit(main())\n'}
+[1.243349] (livox_ros_driver2) StderrLine: {'line': b'               ^^^^^^\n'}
+[1.243385] (livox_ros_driver2) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[1.243421] (livox_ros_driver2) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[1.243457] (livox_ros_driver2) StderrLine: {'line': b'                     ^^^^^^^^^^^^^^^\n'}
+[1.243493] (livox_ros_driver2) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl\n'}
+[1.243529] (livox_ros_driver2) StderrLine: {'line': b'      return convert_msg_to_idl(\n'}
+[1.243564] (livox_ros_driver2) StderrLine: {'line': b'             ^^^^^^^^^^^^^^^^^^^\n'}
+[1.243600] (livox_ros_driver2) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 39, in convert_msg_to_idl\n'}
+[1.243636] (livox_ros_driver2) StderrLine: {'line': b"      expand_template('msg.idl.em', data, output_file, encoding='iso-8859-1')\n"}
+[1.243671] (livox_ros_driver2) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/resource/__init__.py", line 23, in expand_template\n'}
+[1.243707] (livox_ros_driver2) StderrLine: {'line': b'      content = evaluate_template(template_name, data)\n'}
+[1.243742] (livox_ros_driver2) StderrLine: {'line': b'                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'}
+[1.243782] (livox_ros_driver2) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/resource/__init__.py", line 69, in evaluate_template\n'}
+[1.243812] (livox_ros_driver2) StderrLine: {'line': b'      _interpreter.shutdown()\n'}
+[1.243843] (livox_ros_driver2) StderrLine: {'line': b'      ^^^^^^^^^^^^^^^^^^^^^\n'}
+[1.243872] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.243901] (livox_ros_driver2) StderrLine: {'line': b"  AttributeError: 'NoneType' object has no attribute 'shutdown'\n"}
+[1.243931] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.243961] (livox_ros_driver2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.243990] (livox_ros_driver2) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[1.244020] (livox_ros_driver2) StderrLine: {'line': b'  CMakeLists.txt:241 (rosidl_generate_interfaces)\n'}
+[1.244050] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[1.244079] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[1.244109] (livox_ros_driver2) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.251863] (livox_ros_driver2) CommandEnded: {'returncode': 1}
+[1.262503] (livox_ros_driver2) JobEnded: {'identifier': 'livox_ros_driver2', 'rc': 1}
+[1.273149] (-) EventReactorShutdown: {}
